@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Cucumber" time="79.605" tests="1" skipped="0" failures="1" errors="0">
+<testcase classname="Guest Catering Pickup Order and Fulfillment" name="Complete a Catering Pickup Order" time="79.225">
+<failure type="java.lang.NullPointerException" message="Cannot invoke &quot;org.openqa.selenium.WebDriver.findElement(org.openqa.selenium.By)&quot; because &quot;this.driver&quot; is null">
+<![CDATA[java.lang.NullPointerException: Cannot invoke "org.openqa.selenium.WebDriver.findElement(org.openqa.selenium.By)" because "this.driver" is null
+	at pages.SelectDate.selectdate(SelectDate.java:26)
+	at Steps.Seleniumchik2_pom.i_select_a_date(Seleniumchik2_pom.java:114)
+	at ?.I select a date(file:///C:/Users/Abrar/eclipse-workspace/Seleniumchik/src/test/java/features/seleniumchik.feature:9)
+]]>
+</failure>
+<system-out><![CDATA[
+Given I am accessing the site as a guest and select the 'Catering' option on the 'Get Started' page.passed
+And I select 'Catering Pickup' option on the Catering page..................passed
+And I select location '03351'...............................................passed
+And I select a date.........................................................failed
+And I select a time.........................................................skipped
+And I add a 'Nugget Tray' from the 'Trays' category to my order and view my order.skipped
+And I select guest checkout for catering....................................skipped
+And I checkout as a Catering guest with a mastercard........................skipped
+Then The order is complete..................................................skipped
+]]></system-out>
+</testcase>
+</testsuite>
