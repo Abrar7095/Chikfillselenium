@@ -8,7 +8,7 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 
 
 public class GetStart  {
-	protected WebDriver driver;
+	protected RemoteWebDriver driver;
 	protected WebDriverWait wait;
 private By btn_Cateringbtn = By.xpath("//button[@data-cy='Catering']");
 private	By btn_Caterpickupbtn= By.xpath("//button[@data-cy='Catering Pickup']");

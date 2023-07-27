@@ -8,7 +8,7 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 
 
 public class Location  {
-	protected WebDriver driver;
+	protected static RemoteWebDriver driver;
 	protected WebDriverWait wait;
 	
 private By txt_Location= By.xpath("//*[@data-cy='LocationSearch']");

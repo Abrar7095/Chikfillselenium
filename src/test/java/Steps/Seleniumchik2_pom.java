@@ -116,11 +116,11 @@ public class Seleniumchik2_pom  {
 	        int todayInt = calendar.get(Calendar.DAY_OF_MONTH);
 	        
 		
-		selec.selectodaydate();
+		//selec.selectodaydate();
 		
 		
 		//driver.findElement(By.xpath("//*[@data-cy='DatePickerWrapper']")).click();
-	//	driver.findElement(By.xpath("//*[text()='"+todayInt+"']")).click();
+		driver.findElement(By.xpath("//*[text()='"+todayInt+"']")).click();
 			
 	
 	}

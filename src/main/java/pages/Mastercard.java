@@ -7,13 +7,14 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.remote.RemoteWebDriver;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 
 
 public class Mastercard  {
-	protected WebDriver driver;
-	protected WebDriverWait wait;
+	protected static RemoteWebDriver driver;
+	protected static WebDriverWait wait;
 
 private By btn_clickonguestcheckoutbtn=By.xpath("//*[@data-cy='GuestCheckout']");
 
@@ -47,8 +48,8 @@ private By txt_enterzipcode=By.xpath("//*[@id='zip']");
 
 private By btn_clikondonebtn=By.xpath("//*[text()='Done']");
 
-public Mastercard(WebDriver driver6) {
-   this.driver=driver;	
+public Mastercard(RemoteWebDriver driver6) {
+   this.driver=driver6;	
 }
 
 public void Guestcheckoutbtn() {
